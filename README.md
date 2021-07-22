@@ -1,13 +1,22 @@
 # Pakistan Mobile Number Validator
-RegEx for validating mobile numbers of Pakistan. To change it to work for your country just change `92` and 3 with your country code. Also you can change length of numbers by changing last `{9}`
+RegEx for validating mobile numbers of Pakistan. To change it to work for your country just change `92` and `3` with your country code. Also you can change length of numbers by changing last `{9}`
 
     ^((\+92)?(0092)?(92)?(0)?)(3)([0-9]{9})$/gm
     
-Explanation:
+## Explanation:  
+There are `three` groups: 
+
+|Group|Description|
+|--|--|
+|92 \| +92 \| 0092 \| 0  | Allow any integer at beginning  |
+| 3 | Must be having `3` |
+|1234567| Allow any integers between 0-9 but of length `9`|
+
+
+Breakdown:  
 `(\92)`? Allow `92` and is optional  
 `((\+92)?` Allow `+92` and is optional  
 `(0092)?` Allow `0092` and is optional  
-`(92)?` Allow `92` and is optional  
 `(0)?)` Allow only `0` and is optional  
 `(3)` `3` is mandatory because Pakistani numbers starts with `3xx`  
 `([0-9]{9})` Allow any numbers from 0 to 9, but length should be exactly `9`  
