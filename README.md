@@ -10,7 +10,7 @@ Explanation:
 `(92)?` Allow `92` and is optional  
 `(0)?)` Allow only `0` and is optional  
 `(3)` `3` is mandatory because Pakistani numbers starts with `3xx`  
-`([0-9]{9})` Allow any numbers after, but length should be `9`  
+`([0-9]{9})` Allow any numbers from 0 to 9, but length should be exactly `9`  
 
 
 
@@ -28,7 +28,7 @@ Explanation:
 
 
 
-## Don't Validate 
+## Doesn't Validate 
     +3001234567 (92 is missing)
     +933001234567 (Country code is 92)
     +924001234567 (Because of missing 3)
@@ -38,13 +38,7 @@ Explanation:
     0030012345673 (Too many numbers)
 
 
-View and Validate it online on RegEx101 
-https://regex101.com/r/h7LIjZ/2
-
-
-
-
-
+View and Validate it online on [RegEx101](https://regex101.com/r/h7LIjZ/2)
 
 
 To use it in code use as mentioned by [John](https://stackoverflow.com/a/22344145/5737774):
@@ -91,10 +85,10 @@ or
             
             for (int i = 1; i <= matcher.groupCount(); i++) {
                 System.out.println("Group " + i + ": " + matcher.group(i));
+                    }
+                }
             }
         }
-    }
-}
 
 
 
