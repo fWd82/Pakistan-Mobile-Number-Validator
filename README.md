@@ -2,6 +2,8 @@
 RegEx for validating mobile numbers of Pakistan. To change it to work for your country just change `92` and `3` with your country code. Also you can change length of numbers by changing last `{9}`
 
     ^((\+92)?(0092)?(92)?(0)?)(3)([0-9]{9})$/gm
+     
+Test it online on [RegEx101](https://regex101.com/)    
     
 ## Explanation:  
 There are `three` groups: 
@@ -98,6 +100,18 @@ or
                 }
             }
         }
+
+# To allow Dash (-) and White Space
+
+If you want it to allow dash `-` or `space` you can use this one:  
+
+        /^((\+92)?(0092)?(92)?(0)?)(3)([0-9]{2,2})(-?)( ?)([0-9]{7})$/gm
+        
+it will pass these two formats: 
+
+        0300 8048282
+        0300-8048282
+
 
 
 
