@@ -118,8 +118,8 @@ And will reject `0300- 1234567` because it has both white space and dash.
 
 
 
-# Another Solution
-Another solution can be found [here](https://stackoverflow.com/a/24101520/5737774) by Giacomo1968 on StackOverflow as: 
+# Another Solution  
+Another solution can be found [here](https://stackoverflow.com/a/24101520/5737774) by Giacomo1968 on StackOverflow as:  
         ^((\+92)|(0092))-{0,1}\d{3}-{0,1}\d{7}$|^\d{11}$|^\d{4}-\d{7}$
 
 
