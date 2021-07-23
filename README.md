@@ -3,7 +3,7 @@ RegEx for validating mobile numbers of Pakistan. To change it to work for your c
 
     ^((\+92)?(0092)?(92)?(0)?)(3)([0-9]{9})$/gm
      
-Test it online on [RegEx101](https://regex101.com/)    
+Test it online on [RegExr](https://regexr.com/62e7a) or [RegEx101](https://regex101.com/) 
     
 ## Explanation:  
 There are `three` groups: 
@@ -105,12 +105,16 @@ or
 
 If you want it to allow dash `-` or `space` you can use this one:  
 
-        /^((\+92)?(0092)?(92)?(0)?)(3)([0-9]{2,2})(-?)( ?)([0-9]{7})$/gm
+        /^((\+92)?(0092)?(92)?(0)?)(3)([0-9]{2})((-?)|( ?))([0-9]{7})$/gm
+        
+Test it online on [RegExr](https://regexr.com/62e63)  
         
 it will pass these two formats: 
 
-        0300 8048282
-        0300-8048282
+        0300 1234567
+        0300-1234567
+        
+And will reject `0300- 1234567` because it has both white space and dash. 
 
 
 
