@@ -75,18 +75,18 @@ or
         public static void main(String[] args) {
             final String regex = "^((\\+92)?(0092)?(92)?(0)?)(3)([0-9]{9})$";
             final String string = "// Validate it\n\n"
-       + "+923001234567\n"
-       + "00923001234567\n"
-       + "923001234567\n"
-       + "03001234567\n"
-       + "3001234567\n\n\n"
-       + "// Don't Validate \n"
-       + "+3001234567\n"
-       + "+933001234567\n"
-       + "+9230012345672\n"
-       + "+923001234567200\n"
-       + "030012345672\n"
-       + "30012345673";
+                                   + "+923001234567\n"
+                                   + "00923001234567\n"
+                                   + "923001234567\n"
+                                   + "03001234567\n"
+                                   + "3001234567\n\n\n"
+                                   + "// Don't Validate \n"
+                                   + "+3001234567\n"
+                                   + "+933001234567\n"
+                                   + "+9230012345672\n"
+                                   + "+923001234567200\n"
+                                   + "030012345672\n"
+                                   + "30012345673";
 
         final Pattern pattern = Pattern.compile(regex, Pattern.MULTILINE);
         final Matcher matcher = pattern.matcher(string);
