@@ -109,7 +109,7 @@ If you want it to allow dash `-` or `space` you can use this one:
         
 Test it online on [RegExr](https://regexr.com/62e63)  
         
-it will pass these two formats: 
+it will pass these two formats (along with above mentioned): 
 
         0300 1234567
         0300-1234567
