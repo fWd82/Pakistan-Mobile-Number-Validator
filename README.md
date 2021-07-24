@@ -3,7 +3,7 @@ RegEx for validating mobile numbers of Pakistan. To change it to work for your c
 
     ^((\+92)?(0092)?(92)?(0)?)(3)([0-9]{9})$/gm
      
-Test it online on [RegExr](https://regexr.com/62e7a) or [RegEx101](https://regex101.com/) 
+Test it online on [RegExr](https://regexr.com/62e7a) or [RegEx101](https://regex101.com/r/h7LIjZ/2) 
     
 ## Explanation:  
 There are `three` groups: 
@@ -12,7 +12,7 @@ There are `three` groups:
 |--|--|
 |92 \| +92 \| 0092 \| 0  | Allow any integer at beginning  |
 | 3 | Must be having `3` |
-|1234567| Allow any integers between 0-9 but of length `9`|
+|001234567| Allow any integers between 0-9 but of length `9`|
 
 
 Breakdown:  
@@ -49,7 +49,7 @@ Breakdown:
     0030012345673 (Too many numbers)
 
 
-View and Validate it online on [RegEx101](https://regex101.com/r/h7LIjZ/2)
+
 
 
 To use it in code use as mentioned by [John](https://stackoverflow.com/a/22344145/5737774):
